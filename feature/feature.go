@@ -41,6 +41,6 @@ func init() {
 
 var defaultGates = map[featuregate.Feature]featuregate.FeatureSpec{
 	ExternalFleet: {Default: true, PreRelease: featuregate.Beta},
-	AgentTLSMode:  {Default: false, PreRelease: featuregate.Beta},
+	AgentTLSMode:  {Default: true, PreRelease: featuregate.Beta},
 	UIPlugin:      {Default: false, PreRelease: featuregate.Alpha},
 }

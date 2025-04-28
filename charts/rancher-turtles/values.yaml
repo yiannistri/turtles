@@ -21,9 +21,9 @@ rancherTurtles:
     # beta feature, see documentation for more information on feature stages
     addon-provider-fleet:
       enabled: true
-    # alpha feature, see documentation for more information on feature stages
+    # beta feature, see documentation for more information on feature stages
     agent-tls-mode:
-      enabled: false
+      enabled: true
     clusterclass-operations:
       enabled: false
       image: controller
