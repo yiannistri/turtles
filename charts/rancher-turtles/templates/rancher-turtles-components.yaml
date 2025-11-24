@@ -3310,6 +3310,10 @@ spec:
                   - url
                   type: object
                 type: array
+              useRancherDefaultRegistry:
+                description: UseRancherDefaultRegistry indicates whether to use the
+                  Rancher default registry for pulling images.
+                type: boolean
             type: object
         type: object
         x-kubernetes-validations:
@@ -3471,10 +3475,18 @@ rules:
   - management.cattle.io
   resources:
   - clusterregistrationtokens/status
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - management.cattle.io
+  resources:
   - settings
   verbs:
   - get
   - list
+  - patch
   - watch
 - apiGroups:
   - provisioning.cattle.io

@@ -80,10 +80,18 @@ rules:
   - management.cattle.io
   resources:
   - clusterregistrationtokens/status
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - management.cattle.io
+  resources:
   - settings
   verbs:
   - get
   - list
+  - patch
   - watch
 - apiGroups:
   - provisioning.cattle.io

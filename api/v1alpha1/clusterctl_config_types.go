@@ -36,6 +36,10 @@ type ClusterctlConfigSpec struct {
 	// Provider overrides
 	// +optional
 	Providers ProviderList `json:"providers,omitempty"`
+
+	// UseRancherDefaultRegistry indicates whether to use the Rancher default registry for pulling images.
+	// +optional
+	UseRancherDefaultRegistry bool `json:"useRancherDefaultRegistry,omitempty"`
 }
 
 // Provider allows to define providers with known URLs to pull the components.
