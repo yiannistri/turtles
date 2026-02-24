@@ -216,7 +216,7 @@ This is similar to Kind but instead of public endpoint for Rancher, it uses the 
 
 ### EKS
 
-EKS is used to set up a cluster for e2e tests. In this setup nginx ingress will be deployed to provide a public endpoint for Rancher. This option can be enabled by setting `MANAGEMENT_CLUSTER_ENVIRONMENT` to `eks`.
+EKS is used to set up a cluster for e2e tests. In this setup Traefik ingress will be deployed to provide a public endpoint for Rancher. This option can be enabled by setting `MANAGEMENT_CLUSTER_ENVIRONMENT` to `eks`.
 
 ### Customizing the cluster
 
